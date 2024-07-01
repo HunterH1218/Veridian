@@ -8,7 +8,6 @@ authors = ["Your Name <you@example.com>"]
 python = ">=3.10.0,<3.12"
 beautifulsoup4 = "^4.12.3"
 requests = "^2.32.3"
-edx-search = "^3.9.1"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md
