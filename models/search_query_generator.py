@@ -11,7 +11,7 @@ with open(file_path, 'r') as file:
 memory = []
 
 generation_config = {
-  "temperature": 0.80,
+  "temperature": 0.85,
   "top_p": 0.95,
   "top_k": 64,
   "max_output_tokens": 10000,

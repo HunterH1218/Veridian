@@ -1,5 +1,5 @@
 # Veridian AI
-## Features:
+## Features
 **Natural Language Processing**: Utilizes Google's Gemini API using [Google AI Studio](https://aistudio.google.com/).
 
 **Web Search**: Uses [Google](https://www.google.com/)
