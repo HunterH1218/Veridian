@@ -14,5 +14,9 @@ while True:
     results = sg.search_google(search)
     complete_result = sm.generate_response(results)
     print(complete_result)
-  else:
+  elif query == "no":
     print(tm.generate_response(prompt))
+  else: 
+    print("I'm sorry, but something has gone wrong. Please try again.")
+    print("Invalid response from Large Action Model.")
+    print(f"LAM reply: {query}")

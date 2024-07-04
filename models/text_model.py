@@ -1,10 +1,10 @@
 import os
 import google.generativeai as genai
 
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-
-with open(r"training_data.txt") as training_data:
-    full = ("\n".join(training_data.readlines()))
+dir_path = os.path.dirname(os.path.realpath(__file__))
+file_path = os.path.join(dir_path, '..', 'data_files', 'training_data.txt')
+with open(file_path, 'r') as file:
+  training_data = file.read()
 
 memory = []
 
@@ -24,7 +24,7 @@ model = genai.GenerativeModel(
 
 def generate_response(prompt):
   response = model.generate_content([
-    full,
+    training_data,
     f"{memory}",
     f"input: {prompt}",
     "output: ",
