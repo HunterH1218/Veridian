@@ -11,7 +11,7 @@ while True:
   if query == "yes":
     print("Seaching...")
     search = sqg.generate_response(prompt)
-    results = sg.search_google(search)
+    results = sg.main(search)
     complete_result = sm.generate_response(results)
     print(complete_result)
   elif query == "no":

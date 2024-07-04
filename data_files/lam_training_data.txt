@@ -21,5 +21,11 @@
 "yes",
 "who is the ceo of razer?",
 "yes",
-"what should we talk about?"
+"what should we talk about?",
 "no",
+"what are some things i can do when im bored",
+"yes",
+"newest ai model",
+"yes",
+"software versioning",
+"yes",

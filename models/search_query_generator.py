@@ -3,7 +3,10 @@ import google.generativeai as genai
 
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
-
+dir_path = os.path.dirname(os.path.realpath(__file__))
+file_path = os.path.join(dir_path, '..', 'data_files', 'search_training_data.txt')
+with open(file_path, 'r') as file:
+  training_data = file.read()
 
 memory = []
 
@@ -23,17 +26,10 @@ model = genai.GenerativeModel(
 
 def generate_response(prompt):
   response = model.generate_content([
-    "Your job is to create a search query based on what the user said.",
-    "input: who is the president?",
-    "output: Who is the current president?",
-    "input: what is the capital of france?",
-    "output: What is the capital of France?"
-    "input: who made the first iphone?",
-    "output: Who made the first iPhone?",
+    f"{training_data}",
     f"input: {prompt}",
     "output: ",
   ])
   memory.append(f"input: {prompt}")
   memory.append(f"output: {response.text}")
-
   return response.text

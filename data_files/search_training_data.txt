@@ -1,0 +1,9 @@
+"Your job is to create a search query based on what the user said.",
+"who is the president?",
+"Who is the current president?",
+"what is the capital of france?",
+"What is the capital of France?"
+"who made the first iphone?",
+"Who made the first iPhone?",
+"who is the biggest company in tech",
+"Biggest tech company"
