@@ -16,14 +16,14 @@ generation_config = {
 }
 
 model = genai.GenerativeModel(
-  model_name="gemini-1.5-flash",
+  model_name="gemini-1.0-pro",
   generation_config=generation_config,
 
 )
 
 def generate_response(prompt):
   response = model.generate_content([
-    "Your job is to summerize any text given to you. Do not give any other information than what you know from the text you are given.",
+    "Your job is to summerize any text given to you. Do not give any other information than what you know from the text you are given. You are giving the user your summery, but they cannot see what you are summerizing, so be sure to include all the details, but in a consise manner. Just tell them the info you are given, but a summery.",
     f"input: {prompt}",
     "output: ",
   ])

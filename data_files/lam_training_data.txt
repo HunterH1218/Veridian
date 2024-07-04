@@ -29,3 +29,5 @@
 "yes",
 "software versioning",
 "yes",
+"best computor for gaming"
+"yes"

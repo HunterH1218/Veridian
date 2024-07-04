@@ -4,7 +4,6 @@ from models import search_query_generator as sqg
 from search import google_search as sg
 from models import summerize_model as sm
 
-
 while True:
   prompt = input("Prompt: ")
   query = lam.generate_response(prompt)
