@@ -13,8 +13,7 @@ generation_config = {
 }
 model = genai.GenerativeModel(
   model_name="gemini-1.0-pro",
-  generation_config=generation_config,
-
+  generation_config=generation_config
 )
 
 # This function is used to generate a response from the model

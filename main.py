@@ -10,7 +10,10 @@ while True:
   if query == "yes":
     print("Seaching...")
     search = sqg.generate_response(prompt)
+    print("Search query generated")
     results = sg.main(search)
+    print("Done searching!")
+    print("Summerizing...")
     complete_result = sm.generate_response(results)
     print(complete_result)
   elif query == "no":

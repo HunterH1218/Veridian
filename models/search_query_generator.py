@@ -14,7 +14,7 @@ generation_config = {
   "temperature": 0.85,
   "top_p": 0.95,
   "top_k": 64,
-  "max_output_tokens": 10000,
+  "max_output_tokens": 5000,
   "response_mime_type": "text/plain",
 }
 

@@ -16,10 +16,8 @@ generation_config = {
 }
 model = genai.GenerativeModel(
   model_name="gemini-1.0-pro",
-  generation_config=generation_config,
-
+  generation_config=generation_config
 )
-
 
 # Function to generate a response from the model
 def generate_response(prompt):
